@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог игр - BestGames</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="index.html" class="logo">
+                    <div class="logo__icon">BG</div>
+                    <span class="logo__text">BestGames</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Главная</a></li>
+                        <li><a href="profile.html" class="nav__link">Личный кабинет</a></li>
+                        <li><a href="login.html" class="nav__link">Войти</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="catalog">
+        <div class="container">
+            <h1 class="section-title">Каталог игр</h1>
+            
+            <div class="catalog__content">
+                <!-- Фильтры -->
+                <aside class="filters">
+                    <h3>Фильтры</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Жанры</h4>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="genre" value="rpg"> RPG
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="genre" value="action"> Экшен
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="genre" value="shooter"> Шутер
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="genre" value="strategy"> Стратегия
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="genre" value="adventure"> Приключения
+                        </label>
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="genre" value="sports"> Спортивные
+                        </label>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Цена</h4>
+                        <input type="range" min="0" max="10000" value="5000" class="price-range">
+                        <div class="price-values">
+                            <span>0 ₽</span>
+                            <span>5 000 ₽</span>
+                            <span>10 000 ₽</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn--primary" style="width: 100%; margin-top: 1rem;">Применить фильтры</button>
+                </aside>
+                
+                <!-- Кнопка открытия фильтров для мобильных -->
+                <button class="btn btn--secondary filter-toggle">Фильтры</button>
+                
+                <!-- Список игр -->
+                <div class="games-list">
+                    <div class="games-grid">
+                        <!-- Карточки игр будут такие же как на главной, но больше -->
+                        <a href="#" class="game-card">
+                            <img src="https://via.placeholder.com/300x150/6C5CE7/FFFFFF?text=The+Witcher+3" alt="The Witcher 3" class="game-card__image">
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">The Witcher 3: Wild Hunt</h3>
+                                <p class="game-card__genre">RPG, Приключения</p>
+                                <p class="game-card__developer">CD PROJEKT RED</p>
+                                <div class="game-card__rating" data-value="5">★★★★★</div>
+                                <div class="game-card__price">1 499 ₽</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="game-card">
+                            <img src="https://via.placeholder.com/300x150/00B894/FFFFFF?text=Red+Dead+2" alt="Red Dead Redemption 2" class="game-card__image">
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Red Dead Redemption 2</h3>
+                                <p class="game-card__genre">Экшен, Приключения</p>
+                                <p class="game-card__developer">Rockstar Games</p>
+                                <div class="game-card__rating" data-value="5">★★★★★</div>
+                                <div class="game-card__price">2 999 ₽</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="game-card">
+                            <img src="https://via.placeholder.com/300x150/FDCB6E/000000?text=CS2" alt="CS2" class="game-card__image">
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Counter-Strike 2</h3>
+                                <p class="game-card__genre">Шутер</p>
+                                <p class="game-card__developer">Valve</p>
+                                <div class="game-card__rating" data-value="4">★★★★☆</div>
+                                <div class="game-card__price">Бесплатно</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="game-card">
+                            <img src="https://via.placeholder.com/300x150/6C5CE7/FFFFFF?text=Cyberpunk" alt="Cyberpunk 2077" class="game-card__image">
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Cyberpunk 2077</h3>
+                                <p class="game-card__genre">RPG, Экшен</p>
+                                <p class="game-card__developer">CD PROJEKT RED</p>
+                                <div class="game-card__rating" data-value="4">★★★★☆</div>
+                                <div class="game-card__price">1 999 ₽</div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="game-card">
+                            <img src="https://via.placeholder.com/300x150/00B894/FFFFFF?text=Elden+Ring" alt="Elden Ring" class="game-card__image">
+                            <div class="game-card__content">
+                                <h3 class="game-card__title">Elden Ring</h3>
+                                <p class="game-card__genre">RPG, Экшен</p>
+                                <p class="game-card__developer">FromSoftware</p>
+                                <div class="game-card__rating" data-value="5">★★★★★</div>
+                                <div class="game-card__price">3 499 ₽</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Контакты</h3>
+                    <ul class="footer__links">
+                        <li>Телефон: 8-800-999-55-99</li>
+                        <li>Email: best@games.ru</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

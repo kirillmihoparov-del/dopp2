@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель - BestGames</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="index.html" class="logo">
+                    <div class="logo__icon">BG</div>
+                    <span class="logo__text">BestGames</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Главная</a></li>
+                        <li><a href="catalog.html" class="nav__link">Каталог</a></li>
+                        <li><a href="profile.html" class="nav__link">Профиль</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="admin-form">
+                <h1 class="form__title">Добавить новую игру</h1>
+                
+                <form id="adminForm">
+                    <div class="form-group">
+                        <label for="game-title">Название игры *</label>
+                        <input type="text" id="game-title" name="title" required placeholder="Название игры">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="game-genre">Жанр *</label>
+                        <select id="game-genre" name="genre" required>
+                            <option value="">Выберите жанр</option>
+                            <option value="rpg">RPG</option>
+                            <option value="action">Экшен</option>
+                            <option value="shooter">Шутер</option>
+                            <option value="strategy">Стратегия</option>
+                            <option value="adventure">Приключения</option>
+                            <option value="sports">Спортивные</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="game-image">Изображение *</label>
+                        <input type="file" id="game-image" name="image" accept="image/*" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="game-developer">Компания-разработчик *</label>
+                        <input type="text" id="game-developer" name="developer" required placeholder="Название компании">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="game-description">Описание *</label>
+                        <textarea id="game-description" name="description" rows="5" required placeholder="Подробное описание игры"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="game-price">Стоимость *</label>
+                        <input type="number" id="game-price" name="price" required placeholder="Цена в рублях" min="0">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn--primary">Добавить игру</button>
+                        <button type="reset" class="btn btn--secondary">Очистить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Контакты</h3>
+                    <ul class="footer__links">
+                        <li>Телефон: 8-800-999-55-99</li>
+                        <li>Email: best@games.ru</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
